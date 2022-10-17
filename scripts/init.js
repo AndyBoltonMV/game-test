@@ -1,12 +1,13 @@
 import Phaser from "phaser";
 import Title from "./Scenes/Title";
-import Scene1 from "./Scenes/Scene1";
+import Loading from "./Scenes/Loading";
+import Start from "./Scenes/Start";
 
 const config = {
   type: Phaser.auto,
-  width: 600,
-  height: 600,
-  scene: [Title, Scene1],
+  width: 1024,
+  height: 768,
+  scene: [Title, Loading, Start],
   physics: {
     default: "arcade",
     arcade: {
